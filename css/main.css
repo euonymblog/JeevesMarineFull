@@ -1,0 +1,232 @@
+*{
+  padding: 0%;
+  margin: 0;
+  box-sizing: border-box;
+  /*border: 1px solid pink;*/
+
+}
+h1 {
+  font-family: 'IM Fell Great Primer', serif;
+  font-size: 5rem;
+}
+
+h2, h3, h4, h5, h6, p, .menu, a {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+h2, h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: indianred;
+}
+
+/*This is the default section*/
+
+.nav {
+  text-align: center;
+  border-bottom: solid 3px black;
+  margin: 2% 0 3% 0;
+}
+
+.footer {
+  text-align: center;
+  border-top: solid 3px black;
+}
+
+.links {
+  margin: 2% 0 3% 0;
+  text-align: center;
+}
+
+.links a {
+  text-decoration: none;
+  color: black;
+}
+
+.pageImage {
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 50vh;
+  padding-top: 3%;
+}
+
+/*This is the homepage section*/
+
+.home {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+.home a {
+  color: white;
+  text-decoration: none;
+}
+
+#headline h1{
+  margin-top: 10%;
+}
+
+#headline h2 {
+  margin: 5% 0 5% 0;
+}
+
+li {
+  list-style-type: none;
+  font-size: 2rem;
+  color: white;
+}
+
+.menu {
+  display:block;
+	padding:10px;
+  color: white;
+}
+
+.menu ul li ul li {
+		padding:10px;
+		border-bottom:solid 1px white;
+		border-top:solid 1px white;
+	}
+
+.menu ul li ul {
+	display:none;
+	font-size:2rem;
+	padding-top:30px;
+	}
+
+.menu ul li:hover ul {
+  display:block;
+  }
+
+  /*This is the about page*/
+
+.hero {
+  margin: 0 10% 0 10%;
+  text-align: center;
+}
+
+.hero h2 {
+  margin: 2% 2%;
+  font-family: 'IM Fell Great Primer', serif;
+}
+
+.aboutphoto {
+    background-image: url("../images/jeremy.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 50vh;
+  }
+.services {
+  padding: 0 3% 0 3%;
+  margin-top: 3%;
+}
+
+.services h4 {
+  text-align: center;
+  margin-bottom: 2%;
+}
+
+.partners {
+  margin-top: 3%;
+}
+
+.partners {
+  text-align: center;
+}
+
+.partnerNames {
+  margin-top: 3%;
+}
+
+.instagramGrid {
+  margin-top: 5%;
+}
+
+.instagramGrid h4 {
+  margin-bottom: 2%;
+  text-align: center;
+}
+
+/*This is the product section*/
+.announce{
+  color: black;
+  text-align: center;
+  margin: 15% 0%;
+}
+
+.announce h2 {
+  font-size: 3rem;
+}
+
+.comingSoon, .product {
+  padding-bottom: 3%;
+}
+
+.product {
+  padding-right: 7%;
+  padding-left: 7%;
+}
+
+/*This is the services page*/
+
+.maintenance {
+  text-align: center;
+}
+
+.maintenance h2 {
+  font-size: 3rem;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.statement {
+  margin-top: 2%;
+  text-align: center;
+}
+
+.maintPic {
+  background-image: url("../images/maintenanceimage.jpg");
+  color: whitesmoke;
+}
+
+.JMservices {
+  margin-top: 4%;
+}
+
+.headline {
+  font-style: italic;
+  font-weight: bold;
+}
+
+/*This is the brokerage section*/
+
+.brokeStatement {
+  font-size: 3rem;
+  text-align: center;
+}
+.brokePic {
+  background-image: url("../images/brokerage.jpg");
+  color: black;
+  margin-bottom: 2%;
+}
+
+.brokePic h2 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+.bottom {
+  margin-bottom: 2%;
+}

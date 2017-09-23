@@ -1,0 +1,98 @@
+---
+layout: default
+---
+<!-- HEADER FROM DEFAULT -->
+<div class="itemheading">
+  <h2> {{page.boatName}}</h2>
+</div>
+
+
+<div class="grid-spaceBetween">
+
+<!-- SIDEBAR -->
+  <section class="col-4_sm-6_xs-12 itemsidebar">
+
+
+
+    {% if page.type == "project" %}
+
+      <div class="itemBeforeImage" style="background-image: url('{{ page.beforeImage }}'); background-position: center; background-size: cover; background-repeat: none;">
+      </div>
+      <div class="itemAfterImage" style="background-image: url('{{ page.afterImage }}'); background-position: center; background-size: cover; background-repeat: none;">
+      </div>
+      <div class="itemfield boatDescription">
+        <h6>{{ page.boatDescription }}</h6>
+      </div>
+      <div class="itemfield date">
+        <h6>{{ page.date }}</h6>
+      </div>
+      <div class="itemfield itemServices">
+        <h6>Services provided</h6>
+
+          {% if page.Maintenance == true %}
+            <div class="itemfield itemMaintenance">
+                Maintenance and trades coordination
+            </div>
+          {% endif %}
+
+          {% if page.brokerage == true %}
+            <div class="itemfield itemBrokerage">
+              Brokerage
+          </div>
+          {% endif %}
+
+          {% if page.sailing == true %}
+            <div class="itemfield itemSailing">
+              Sailing coaching/training
+            </div>
+          {% endif %}
+      </div>
+    {% endif %}
+
+    {% if page.type == "testimonial" %}
+      <div class="itemAfterImage" style="background-image: url('{{ page.afterImage }}'); background-position: center; background-size: cover; background-repeat: none;">
+      </div>
+      <div class="itemfield boatName">
+        <h6>{{ page.boatName }}</h6>
+      <div class="itemfield boatDescription">
+        <h6>{{ page.boatDescription }}</h6>
+      </div>
+      <div class="itemfield boatOwner">
+        <h6>{{ page.boatOwner }}</h6>
+
+      <div class="itemfield itemServices">
+        <h6>Services provided</h6>
+
+          {% if page.Maintenance == true %}
+            <div class="itemfield itemMaintenance">
+                Maintenance and trades coordination
+            </div>
+          {% endif %}
+
+          {% if page.brokerage == true %}
+            <div class="itemfield itemBrokerage">
+              Brokerage
+          </div>
+          {% endif %}
+
+          {% if page.sailing == true %}
+            <div class="itemfield itemSailing">
+              Sailing coaching/training
+            </div>
+          {% endif %}
+      </div>
+    {% endif %}
+
+
+
+  </section>
+</div>
+
+
+<!-- MAIN CONTENT -->
+
+  <div class="col-8_sm-6_xs-12 itemcontent">
+    <p> {{content}} </p>
+  </div>
+
+</div>

@@ -1,0 +1,30 @@
+---
+layout: default
+title: Projects
+---
+<title>Projects</title>
+
+  <div class="projectsTitle">
+    <div class="#">
+      <h2>A selection of our recent projects</h2>
+    </div>
+  </div>
+
+  {% for thing in site.projects limit:6 %}
+  <a href="{{ thing.url }}" class="grid item">
+    <div class="col-4_sm-6_xs-12 mobile-image-height" style="background-image: url('{{ thing.afterImage }}'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+    </div>
+
+    <div class="col-8_sm-6_xs-12 item">
+      <div class="projectsBox projectTitle">
+        <h3>{{ thing.boatName }}</h3>
+      </div>
+      <div class="projectsBox projectDescription">
+        <h4>
+          {{ thing.boatDescription }}
+        </h4>
+      </div>
+    </div>
+  </a>
+
+  {% endfor %}
