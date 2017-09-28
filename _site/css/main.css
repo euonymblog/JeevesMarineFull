@@ -61,6 +61,16 @@ a:hover {
   padding-top: 3%;
 }
 
+.contactUs {
+  background-color: transparent;
+  border: 4px solid darkslategrey;
+  margin: 0% 35% 5% 35%;
+}
+
+.contactUs h4 {
+  font-size: 2rem;
+}
+
 /*This is the homepage section*/
 
 .home {
@@ -186,10 +196,16 @@ li {
   text-align: center;
 }
 
-.maintenance h2 {
-  font-size: 3rem;
+.container h2 {
+  font-size: 3.5rem;
   margin-top: 5%;
   margin-bottom: 5%;
+}
+
+.container {
+  background-color: whitesmoke;
+  padding: 0.25%;
+  margin: 0 10% 0 10%;
 }
 
 .statement {
@@ -199,11 +215,13 @@ li {
 
 .maintPic {
   background-image: url("../images/maintenanceimage.jpg");
-  color: whitesmoke;
+  color: darkslategrey;
+  padding-top: 6%;
 }
 
 .JMservices {
   margin-top: 4%;
+  margin-bottom: 5%;
 }
 
 .headline {
