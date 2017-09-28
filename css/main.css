@@ -230,3 +230,9 @@ li {
 .bottom {
   margin-bottom: 2%;
 }
+
+@media only screen and (max-width: 500px) {
+  .menu {
+    display:block;
+    }
+}
